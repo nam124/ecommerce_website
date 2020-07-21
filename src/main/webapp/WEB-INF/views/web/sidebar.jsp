@@ -8,7 +8,7 @@
 		<ul id="sideManu" class="nav nav-tabs nav-stacked">
 			<li class="subMenu open"><a>LAPTOP</a>
 				<ul>
-				<li><a class="#" href="products.html"><i class="icon-chevron-right"></i>LAPTOP DELL </a></li>
+				<li><a class="#" href="#"><i class="icon-chevron-right"></i>LAPTOP DELL </a></li>
 				<li><a href="#"><i class="icon-chevron-right"></i>LAPTOP ASUS</a></li>
 				<li><a href="#"><i class="icon-chevron-right"></i>MACBOOK </a></li>
 			
