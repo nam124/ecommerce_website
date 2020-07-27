@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Inventory Management | </title>
+    <title>Quản Lý Bán Hàng | </title>
 
     <!-- Bootstrap -->
     <link href="<c:url value="/resources/vendors/bootstrap/dist/css/bootstrap.min.css"/>" rel="stylesheet">
@@ -38,7 +38,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Inventory Management!</span></a>
+              <a href="#" class="site_title"><i class="fa fa-paw"></i> <span>Quản lý bán hàng</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -49,7 +49,7 @@
                 <img src="<c:url value="/resources/images/user.png" />"alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
+                <span>Chào mừng,</span>
                 <h2>${userInfo.name}</h2>
               </div>
             </div>

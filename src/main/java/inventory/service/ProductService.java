@@ -125,8 +125,8 @@ public class ProductService {
 				queryStr.append(" and model.id=:id");
 				mapParams.put("id", productInfo.getId());
 			}
-			if(productInfo.getCateId()!=null && productInfo.getCateId()!=0 ) {
-				queryStr.append(" and model.cateId=:cateId");
+			if(productInfo.getCategory()!=null  ) {
+				queryStr.append(" and model.category.id=:cateId");
 				mapParams.put("cateId", productInfo.getCateId());
 			}
 			

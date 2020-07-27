@@ -7,7 +7,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bootshop online Shopping cart</title>
+    <title>LuongNam Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -45,7 +45,7 @@
 		<form:form modelAttribute="searchFormWeb" servletRelativeAction="/web/list/1" class="form-inline navbar-search" method="post">
 		<form:input path="code"  class="srchTxt" placeholder="Tìm Kiếm" type="text" />
 		  <form:select path="name" class="srchTxt">
-			  <form:option value="" label="LỌC LAPTOP" />
+			  <form:option value="" label="LỌC SẢN PHẨM" />
 			 <form:option value="DELL" label="LAPTOP DELL" />
 			 <form:option value="ASUS" label="LAPTOP ASUS" />
 		</form:select> 
@@ -158,7 +158,7 @@
 				<h5>LUONGNAM Company</h5>
 			 </div>
 			 <div class="span3">
-				<h5>Ưu Tiên Chất Lượng Hàng Đầu</h5>
+				<h5>Địa chỉ: số 1 Thái Hà, hà nội</h5>
 			 </div>
 			<div id="socialMedia" class="span3 pull-right">
 				<h5>SOCIAL MEDIA </h5>

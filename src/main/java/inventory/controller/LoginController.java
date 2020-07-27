@@ -82,7 +82,7 @@ public class LoginController {
 		}
 		session.setAttribute(Constant.MENU_SESSION, menuList);
 		session.setAttribute(Constant.USER_INFO, user);
-		return "redirect:/index";
+		return "redirect:/product-info/list";
 	}
 	@GetMapping("/access-denied")
 	public String accessDenied() {

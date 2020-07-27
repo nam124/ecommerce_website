@@ -46,7 +46,7 @@
 							</div>
 
 							<div class="form-group">
-								<label class="control-label col-md-3 col-sm-3 col-xs-12" for="code">Code <span class="required">*</span>
+								<label class="control-label col-md-3 col-sm-3 col-xs-12" for="code">Tên sản phẩm <span class="required">*</span>
 								</label>
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<form:input path="code" cssClass="form-control col-md-7 col-xs-12" disabled="${viewOnly}" />
@@ -56,7 +56,7 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
+								<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Hãng <span class="required">*</span>
 								</label>
 								<div class="col-md-6 col-sm-6 col-xs-12">
 									<form:input path="name" cssClass="form-control col-md-7 col-xs-12" disabled="${viewOnly}" />
@@ -76,7 +76,7 @@
 							</div>
 							<c:if test="${!viewOnly }">
 								<div class="form-group">
-									<label for="multipartFile" class="control-label col-md-3 col-sm-3 col-xs-12">Image Upload</label>
+									<label for="multipartFile" class="control-label col-md-3 col-sm-3 col-xs-12">Hình ảnh</label>
 									<div class="col-md-6 col-sm-6 col-xs-12">
 										<form:input path="multipartFile" cssClass="form-control col-md-7 col-xs-12" type="file" />
 										<div class="has-error">
@@ -88,10 +88,10 @@
 							<div class="ln_solid"></div>
 							<div class="form-group">
 								<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-									<button class="btn btn-primary" type="button" onclick="cancel();">Cancel</button>
+									<button class="btn btn-primary" type="button" onclick="cancel();">Thoát</button>
 									<c:if test="${!viewOnly }">
 										<button class="btn btn-primary" type="reset">Reset</button>
-										<button type="submit" class="btn btn-success">Submit</button>
+										<button type="submit" class="btn btn-success">Lưu</button>
 									</c:if>
 								</div>
 							</div>
