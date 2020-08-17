@@ -30,6 +30,8 @@
     <link href="<c:url value="/resources/vendors/pnotify/dist/pnotify.nonblock.css"/>" rel="stylesheet">
       <!-- jQuery -->
     <script src="<c:url value="/resources/vendors/jquery/dist/jquery.min.js"/>"></script>
+        <!-- bootstrap-datetimepicker -->
+    <link href="<c:url value="/resources/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"/>" rel="stylesheet">
   </head>
 
   <body class="nav-md ">
@@ -107,6 +109,10 @@
     <script src="<c:url value="/resources/vendors/pnotify/dist/pnotify.js"/>"></script>
     <script src="<c:url value="/resources/vendors/pnotify/dist/pnotify.buttons.js"/>"></script>
     <script src="<c:url value="/resources/vendors/pnotify/dist/pnotify.nonblock.js"/>"></script>
+    <!-- bootstrap-datetimepicker -->    
+    <!-- bootstrap-daterangepicker -->
+    <script src="<c:url value="/resources/vendors/moment/min/moment.min.js"/>"></script>
+    <script src="<c:url value="/resources/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"/>"></script>
     
 
     <!-- Custom Theme Scripts -->

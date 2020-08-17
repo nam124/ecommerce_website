@@ -15,7 +15,7 @@
 				<li class="span3">
 				
 				 <div class="thumbnail">
-				 	<a href="product_details.html"><img src="<c:url value="${product.imgUrl}"/>" width="300px" height="300px"/></a>
+				 	<a href="#"><img src="<c:url value="${product.imgUrl}"/>" width="300px" height="300px"/></a>
 				 	<div class="caption">
 				 	 <h5>${product.code }</h5>
 				 	

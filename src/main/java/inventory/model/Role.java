@@ -18,6 +18,7 @@ public class Role implements java.io.Serializable {
 	private Date updateDate;
 	private Set auths = new HashSet(0);
 	private Set usersRoles = new HashSet(0);
+	
 
 	public Role() {
 	}
@@ -104,5 +105,7 @@ public class Role implements java.io.Serializable {
 	public void setUsersRoles(Set usersRoles) {
 		this.usersRoles = usersRoles;
 	}
+
+
 
 }

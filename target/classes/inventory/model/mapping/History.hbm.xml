@@ -15,8 +15,8 @@
         <property generated="never" lazy="false" name="type" optimistic-lock="true" type="int" unique="false">
             <column name="TYPE" not-null="true"/>
         </property>
-        <property generated="never" lazy="false" name="qyt" optimistic-lock="true" type="int" unique="false">
-            <column name="QYT" not-null="true"/>
+        <property generated="never" lazy="false" name="qty" optimistic-lock="true" type="int" unique="false">
+            <column name="QTY" not-null="true"/>
         </property>
         <property generated="never" lazy="false" name="price" optimistic-lock="true" type="big_decimal" unique="false">
             <column name="PRICE" not-null="true" precision="15"/>

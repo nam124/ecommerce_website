@@ -60,7 +60,7 @@ public class LoginController {
 			Auth auth = (Auth) obj;
 			Menu menu = auth.getMenu();
 			if(menu.getParentId()==0 && menu.getOrlderIndex()!=-1 && menu.getActiveFlag()==1 && auth.getPermission()==1 && auth.getActiveFlag()==1) {
-				menu.setIdMenu(menu.getUrl().replace("/", "")+"Id"); 
+				menu.setIdMenu(menu.getUrl().replace("/", "")+"Id");   // /menu/list =>  menulistId, để gắn vào các thẻ id trên form html
 				menuList.add(menu);
 			}else if( menu.getParentId()!=0 && menu.getOrlderIndex()!=-1 && menu.getActiveFlag()==1 && auth.getPermission()==1 && auth.getActiveFlag()==1) {
 				menu.setIdMenu(menu.getUrl().replace("/", "")+"Id"); 

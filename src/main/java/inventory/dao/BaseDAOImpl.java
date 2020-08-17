@@ -39,7 +39,7 @@ public class BaseDAOImpl<E> implements BaseDAO<E>{
 			}
 		}
 		if(paging!=null) {
-			query.setFirstResult(paging.getOffset());
+			query.setFirstResult(paging.getOffset()); // form model where model.activeFlag=1 limit 0,10
 			query.setMaxResults(paging.getRecordPerPage());
 			long totalRecords = (long)countQ.uniqueResult();
 			paging.setTotalRows(totalRecords);
@@ -66,7 +66,13 @@ public class BaseDAOImpl<E> implements BaseDAO<E>{
 
 	public void save(E instance) {
 		log.info(" save instance");
-		sessionFactory.getCurrentSession().persist(instance);
+		try {
+			sessionFactory.getCurrentSession().persist(instance);
+		} catch (Exception e) {
+			e.printStackTrace();
+			log.error(e.getMessage());
+		}
+		
 	}
 
 	public void update(E instance) {

@@ -59,7 +59,7 @@ public class ProductInfoController {
 	public String showProductInfoList(Model model, HttpSession session,
 			@ModelAttribute("searchForm") ProductInfo productInfo, @PathVariable("page") int page) {
 		log.info("show product info=" + productInfo);
-		Paging paging = new Paging(5);
+		Paging paging = new Paging(2);
 		paging.setIndexPage(page);
 		List<ProductInfo> products = productService.getAllProductInfo(productInfo, paging);
 		if (session.getAttribute(Constant.MSG_SUCCESS) != null) {
@@ -100,7 +100,31 @@ public class ProductInfoController {
 		return "home.index";
 
 	}
+	
 
+	@RequestMapping(value = "/web/filter/{name}/{page}")
+	public String filterProduct(Model model, HttpSession session,@ModelAttribute("searchFormWeb") ProductInfo productInfo,@PathVariable("name") String name,@PathVariable("page") int page) {
+		
+		Paging paging = new Paging(6);
+		paging.setIndexPage(page);
+		if(name != null) {
+		productInfo.setName(name);
+		}
+		List<ProductInfo> products = productService.getAllProductInfo(productInfo, paging);
+		if (session.getAttribute(Constant.MSG_SUCCESS) != null) {
+			model.addAttribute(Constant.MSG_SUCCESS, session.getAttribute(Constant.MSG_SUCCESS));
+			session.removeAttribute(Constant.MSG_SUCCESS);
+		}
+		if (session.getAttribute(Constant.MSG_ERROR) != null) {
+			model.addAttribute(Constant.MSG_ERROR, session.getAttribute(Constant.MSG_ERROR));
+			session.removeAttribute(Constant.MSG_ERROR);
+		}
+		model.addAttribute("pageInfo", paging);
+		model.addAttribute("products", products);
+		 
+		return "home.index";
+
+	}
 	@GetMapping("/product-info/add")
 	public String add(Model model) {
 		model.addAttribute("titlePage", "Add ProductInfo");

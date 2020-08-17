@@ -41,15 +41,15 @@
 	<span class="icon-bar"></span>
 </a>
   <div class="navbar-inner">
-    <a class="brand" href="index.html"><img src="<c:url value="/resources/user/themes/images/logo.png"/>" alt="Bootsshop"/></a>
+    <a class="brand" href="<c:url value="/web/"/>"><img src="<c:url value="/resources/user/themes/images/logo.png"/>" alt="Bootsshop"/></a>
 		<form:form modelAttribute="searchFormWeb" servletRelativeAction="/web/list/1" class="form-inline navbar-search" method="post">
 		<form:input path="code"  class="srchTxt" placeholder="Tìm Kiếm" type="text" />
-		  <form:select path="name" class="srchTxt">
+		 <%--  <form:select path="name" class="srchTxt">
 			  <form:option value="" label="LỌC SẢN PHẨM" />
 			 <form:option value="DELL" label="LAPTOP DELL" />
 			 <form:option value="ASUS" label="LAPTOP ASUS" />
-		</form:select> 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Go</button>
+		</form:select>  --%>
+		  <button type="submit" id="submitButton" class="btn btn-primary">Tìm Kiếm</button>
     </form:form>
     <ul id="topMenu" class="nav pull-right">
 	 <li class=""><a href="#">Bảo Hành</a></li>

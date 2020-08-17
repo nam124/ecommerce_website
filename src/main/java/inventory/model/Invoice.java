@@ -1,5 +1,5 @@
 package inventory.model;
-// Generated Jun 30, 2020 3:20:38 AM by Hibernate Tools 5.4.3.Final
+// Generated Dec 26, 2018 6:59:18 PM by Hibernate Tools 5.1.10.Final
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -13,24 +13,27 @@ public class Invoice implements java.io.Serializable {
 	private ProductInfo productInfo;
 	private String code;
 	private int type;
-	private int qyt;
+	private int qty;
 	private BigDecimal price;
 	private int activeFlag;
-	private Date createDAte;
+	private Date createDate;
 	private Date updateDate;
+	private Date toDate;
+	private Date fromDate;
+	private Integer productId;
 
 	public Invoice() {
 	}
 
-	public Invoice(ProductInfo productInfo, String code, int type, int qyt, BigDecimal price, int activeFlag,
-			Date createDAte, Date updateDate) {
+	public Invoice(ProductInfo productInfo, String code, int type, int qty, BigDecimal price, int activeFlag,
+			Date createDate, Date updateDate) {
 		this.productInfo = productInfo;
 		this.code = code;
 		this.type = type;
-		this.qyt = qyt;
+		this.qty = qty;
 		this.price = price;
 		this.activeFlag = activeFlag;
-		this.createDAte = createDAte;
+		this.createDate = createDate;
 		this.updateDate = updateDate;
 	}
 
@@ -66,12 +69,12 @@ public class Invoice implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public int getQyt() {
-		return this.qyt;
+	public int getQty() {
+		return this.qty;
 	}
 
-	public void setQyt(int qyt) {
-		this.qyt = qyt;
+	public void setQty(int qty) {
+		this.qty = qty;
 	}
 
 	public BigDecimal getPrice() {
@@ -90,12 +93,12 @@ public class Invoice implements java.io.Serializable {
 		this.activeFlag = activeFlag;
 	}
 
-	public Date getCreateDAte() {
-		return this.createDAte;
+	public Date getCreateDate() {
+		return this.createDate;
 	}
 
-	public void setCreateDAte(Date createDAte) {
-		this.createDAte = createDAte;
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
 	}
 
 	public Date getUpdateDate() {
@@ -105,5 +108,31 @@ public class Invoice implements java.io.Serializable {
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
+
+	public Date getToDate() {
+		return toDate;
+	}
+
+	public void setToDate(Date toDate) {
+		this.toDate = toDate;
+	}
+
+	public Date getFromDate() {
+		return fromDate;
+	}
+
+	public void setFromDate(Date fromDate) {
+		this.fromDate = fromDate;
+	}
+
+	public Integer getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Integer productId) {
+		this.productId = productId;
+	}
+	
+	
 
 }

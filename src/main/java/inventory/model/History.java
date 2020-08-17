@@ -13,7 +13,7 @@ public class History implements java.io.Serializable {
 	private ProductInfo productInfo;
 	private String actionName;
 	private int type;
-	private int qyt;
+	private int qty;
 	private BigDecimal price;
 	private int activeFlag;
 	private Date createDAte;
@@ -22,12 +22,12 @@ public class History implements java.io.Serializable {
 	public History() {
 	}
 
-	public History(ProductInfo productInfo, String actionName, int type, int qyt, BigDecimal price, int activeFlag,
+	public History(ProductInfo productInfo, String actionName, int type, int qty, BigDecimal price, int activeFlag,
 			Date createDAte, Date updateDate) {
 		this.productInfo = productInfo;
 		this.actionName = actionName;
 		this.type = type;
-		this.qyt = qyt;
+		this.qty = qty;
 		this.price = price;
 		this.activeFlag = activeFlag;
 		this.createDAte = createDAte;
@@ -66,12 +66,12 @@ public class History implements java.io.Serializable {
 		this.type = type;
 	}
 
-	public int getQyt() {
-		return this.qyt;
+	public int getQty() {
+		return this.qty;
 	}
 
-	public void setQyt(int qyt) {
-		this.qyt = qyt;
+	public void setQty(int qty) {
+		this.qty = qty;
 	}
 
 	public BigDecimal getPrice() {

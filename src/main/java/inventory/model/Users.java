@@ -19,6 +19,7 @@ public class Users implements java.io.Serializable {
 	private Date createDAte;
 	private Date updateDate;
 	private Set usersRoles = new HashSet(0);
+	private Integer roleID;
 
 	public Users() {
 	}
@@ -114,6 +115,14 @@ public class Users implements java.io.Serializable {
 
 	public void setUsersRoles(Set usersRoles) {
 		this.usersRoles = usersRoles;
+	}
+
+	public Integer getRoleID() {
+		return roleID;
+	}
+
+	public void setRoleID(Integer roleID) {
+		this.roleID = roleID;
 	}
 
 }
