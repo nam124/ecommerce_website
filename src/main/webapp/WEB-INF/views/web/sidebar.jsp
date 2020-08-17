@@ -8,8 +8,13 @@
 		<ul id="sideManu" class="nav nav-tabs nav-stacked">
 			<li class="subMenu open"><a>LAPTOP</a>
 				<ul>
+<<<<<<< HEAD
 				<li><a class="#" href="<c:url value="/web/filter/dell/1"/>"><i class="icon-chevron-right"></i>LAPTOP DELL </a></li>
 				<li><a href="<c:url value="/web/filter/asus/1"/>"><i class="icon-chevron-right"></i>LAPTOP ASUS</a></li>
+=======
+				<li><a class="#" href="#"><i class="icon-chevron-right"></i>LAPTOP DELL </a></li>
+				<li><a href="#"><i class="icon-chevron-right"></i>LAPTOP ASUS</a></li>
+>>>>>>> cf159025d7c1e67d7bd3e0794e83c055c6bdce3e
 				<li><a href="#"><i class="icon-chevron-right"></i>MACBOOK </a></li>
 			
 				</ul>
